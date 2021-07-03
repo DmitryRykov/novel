@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 188, in script
-    rudi "Симптомы одни и те же, так что это 100% проделки WaterPump."
-ValueError: unsupported format character '?' (0x43f) at index 40
+  File "game/script.rpy", line 646, in script
+    $ court_for_final = camera + old_water_filter + expert_report+ water_sample
+  File "game/script.rpy", line 646, in <module>
+    $ court_for_final = camera + old_water_filter + expert_report+ water_sample
+NameError: name 'camera' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 188, in script
-    rudi "Симптомы одни и те же, так что это 100% проделки WaterPump."
-  File "renpy/ast.py", line 715, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "renpy/exports.py", line 1406, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character '?' (0x43f) at index 40
+  File "game/script.rpy", line 646, in script
+    $ court_for_final = camera + old_water_filter + expert_report+ water_sample
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 646, in <module>
+    $ court_for_final = camera + old_water_filter + expert_report+ water_sample
+NameError: name 'camera' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 N_prakt 1.0
-Thu Jul  1 22:33:16 2021
+Sat Jul  3 22:39:30 2021

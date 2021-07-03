@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 284, in script
+    if court_for_final = 4:
+SyntaxError: invalid syntax (script.rpy, line 284)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 284, in script
+    if court_for_final = 4:
+  File "/Users/ilyamiroshin/Desktop/renpy-7.4.6-sdk/renpy/ast.py", line 1892, in execute
+    if renpy.python.py_eval(condition):
+  File "/Users/ilyamiroshin/Desktop/renpy-7.4.6-sdk/renpy/python.py", line 2247, in py_eval
+    code = py_compile(code, 'eval')
+  File "/Users/ilyamiroshin/Desktop/renpy-7.4.6-sdk/renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (script.rpy, line 284)
+
+Darwin-20.5.0-x86_64-i386-64bit
+Ren'Py 7.4.6.1693
+glav78titr 1.0
+Sat Jul  3 20:33:28 2021

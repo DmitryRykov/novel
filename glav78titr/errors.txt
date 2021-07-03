@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 11: expected '=' not found.
+    define court_for_final
+                          ^
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Sat Jul  3 20:20:24 2021
