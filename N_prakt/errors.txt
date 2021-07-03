@@ -1,0 +1,12 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+The label health is defined twice, at File "game/script.rpy", line 316:
+label health:
+and File "game/script.rpy", line 333:
+label health:
+
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Thu Jul  1 23:54:19 2021
