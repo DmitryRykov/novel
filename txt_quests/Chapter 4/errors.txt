@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 86: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "3- попросить Руди устроить погром?"
+                                        ^
+
+Ren'Py Version: Ren'Py 7.4.6.1693
+Sat Jul  3 11:49:53 2021

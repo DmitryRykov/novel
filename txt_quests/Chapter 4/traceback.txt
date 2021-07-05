@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 85, in script
+    if Rudu > 1:
+  File "game/script.rpy", line 85, in <module>
+    if Rudu > 1:
+NameError: name 'Rudu' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 85, in script
+    if Rudu > 1:
+  File "renpy/ast.py", line 1892, in execute
+    if renpy.python.py_eval(condition):
+  File "renpy/python.py", line 2249, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2242, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 85, in <module>
+    if Rudu > 1:
+NameError: name 'Rudu' is not defined
+
+Windows-10-10.0.17763
+Ren'Py 7.4.6.1693
+Chapter 4 1.0
+Sun Jul  4 18:01:27 2021
