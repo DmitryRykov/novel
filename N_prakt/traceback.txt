@@ -29,4 +29,4 @@ Exception: store.camera is being given a default a second time.
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
 N_prakt 1.0
-Mon Jul  5 21:42:01 2021
+Wed Jul  7 13:48:38 2021

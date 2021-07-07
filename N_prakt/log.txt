@@ -1,119 +1,35 @@
-Mon Jul  5 21:35:28 2021
+Wed Jul  7 13:48:37 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.6.1693
  
 
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.00s
+Bootstrap to the start of init.init took 0.16s
+Early init took 0.01s
 Loader init took 0.03s
-Loading error handling took 0.05s
-Loading script took 0.53s
+Loading error handling took 0.04s
+Loading script took 0.23s
 Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
+Running init code took 0.10s
 Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\pixse\\AppData\\Roaming/RenPy/backups\\N_prakt':
-Dump and make backups. took 0.16s
+Dump and make backups. took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.04s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.08s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.07s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.07s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3674, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-
-While running game code:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
-Version: '4.5.13541 Compatibility Profile Context 25.20.14122.12001'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1298, 730) drawable=(1298, 730)
-Maximum texture size: 4096x4096
-Total time until interface ready: 2.25566911697s
-Performance test:
-
-Full traceback:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'rido' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-Exception: Sayer 'rido' is not defined.
-Resetting cache.
-Bootstrap to the start of init.init took 105.74s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.02s
+Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.10s
+Prepare screens took 0.11s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -141,7 +57,7 @@ While running game code:
   File "game/script.rpy", line 22, in set_default
     default camera = 0
 Exception: store.camera is being given a default a second time.
-Interface start took 0.07s
+Interface start took 0.17s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -149,319 +65,9 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: 'ATI Technologies Inc.'
 Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
-Version: '4.5.13541 Compatibility Profile Context 25.20.14122.12001'
+Version: '4.6.13560 Compatibility Profile Context 26.20.11030.22001'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1298, 730) drawable=(1298, 730)
 Maximum texture size: 4096x4096
-Total time until interface ready: 106.530478001s
+Total time until interface ready: 2.27799081802s
 Performance test:
-
-Full traceback:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'rido' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-Exception: Sayer 'rido' is not defined.
-
-Full traceback:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'rido' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 443, in script
-    rido "Вы не моглибы отвести нас в уборную, а то мой напарник превратит ваш белоснежный интереьр во что-то....коричневое"
-Exception: Sayer 'rido' is not defined.
-Resetting cache.
-Bootstrap to the start of init.init took 125.73s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.35s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\pixse\\AppData\\Roaming/RenPy/backups\\N_prakt':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.09s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3674, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-
-While running game code:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
-Version: '4.5.13541 Compatibility Profile Context 25.20.14122.12001'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1298, 730) drawable=(1298, 730)
-Maximum texture size: 4096x4096
-Total time until interface ready: 126.859808922s
-Performance test:
-
-Full traceback:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'ra' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-Exception: Sayer 'ra' is not defined.
-Resetting cache.
-Bootstrap to the start of init.init took 194.57s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.16s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3674, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-
-While running game code:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
-Version: '4.5.13541 Compatibility Profile Context 25.20.14122.12001'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1298, 730) drawable=(1298, 730)
-Maximum texture size: 4096x4096
-Total time until interface ready: 195.396608114s
-Performance test:
-
-Full traceback:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'ra' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-Exception: Sayer 'ra' is not defined.
-
-Full traceback:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'ra' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 556, in script
-    ra "Эй! Ты что творишь?!?!"
-Exception: Sayer 'ra' is not defined.
-Resetting cache.
-Bootstrap to the start of init.init took 218.43s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.03s
-Loading script took 0.40s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\pixse\\AppData\\Roaming/RenPy/backups\\N_prakt':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.09s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3674, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-
-While running game code:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon(TM) Vega 8 Graphics'
-Version: '4.5.13541 Compatibility Profile Context 25.20.14122.12001'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1298, 730) drawable=(1298, 730)
-Maximum texture size: 4096x4096
-Total time until interface ready: 219.63647294s
-Performance test:
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/ast.py", line 922, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2218, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3674, in execute_default_statement
-    i.set_default(start)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
-
-While running game code:
-  File "renpy/common/00start.rpy", line 190, in script
-    python:
-  File "renpy/common/00start.rpy", line 191, in <module>
-    renpy.execute_default_statement(True)
-  File "game/script.rpy", line 22, in set_default
-    default camera = 0
-Exception: store.camera is being given a default a second time.
